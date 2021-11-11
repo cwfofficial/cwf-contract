@@ -4,7 +4,6 @@ pragma solidity ^0.5.0;
 
 import "./TRC20.sol";
 import "./TRC20Detailed.sol";
-import "./TRC20Mintable.sol";
 import "./TRC20Burnable.sol";
 
 /**
@@ -13,7 +12,7 @@ import "./TRC20Burnable.sol";
  * Note they can later distribute these tokens as they wish using `transfer` and other
  * `TRC20` functions.
  */
-contract Token is TRC20, TRC20Detailed,TRC20Burnable,TRC20Mintable {
+contract Token is TRC20, TRC20Detailed,TRC20Burnable {
 
     /**
      * @dev Constructor that gives msg.sender all of existing tokens.
